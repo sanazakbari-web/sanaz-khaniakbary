@@ -1,0 +1,30 @@
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+wp-config.php
+wp-config-local.php
+.htpasswd
+*.pem
+*.key
+
+# Database dumps and private WordPress content
+*.sql
+*.sql.gz
+*.sqlite
+*.sqlite3
+**/wp-content/uploads/
+**/wp-content/cache/
+**/wp-content/upgrade/
+**/wp-content/backup*/
+**/wp-content/debug.log
+
+# Dependencies, archives and local tools
+node_modules/
+vendor/
+*.zip
+*.log
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

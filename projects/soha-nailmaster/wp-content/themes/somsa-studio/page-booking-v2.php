@@ -1,0 +1,4 @@
+<?php get_header();$services=somsa_services(); ?>
+<main id="main"><section class="inner-head"><div class="eyebrow">SOMA STUDIO</div><h1>رزرو نوبت</h1><p>فهرست خدمات و رزرو آنلاین در حال به‌روزرسانی است.</p></section>
+<section class="booking-area wrap"><div class="service-list-panel"><div class="price-panel-head"><div><div class="eyebrow">SOMA STUDIO</div><h2 class="serif">رزرو آنلاین به‌زودی فعال می‌شود</h2></div></div><p class="services-note">پس از نهایی‌شدن خدمات جدید، امکان انتخاب خدمت و زمان نوبت در این صفحه فراهم می‌شود.</p></div></section>
+<section class="faq"><h2>پیش از رزرو</h2><details><summary>مدت زمان هر نوبت چقدر است؟</summary><p>زمان هر نوبت پس از نهایی‌شدن فهرست خدمات اعلام می‌شود.</p></details><details><summary>چه زمانی فهرست خدمات جدید منتشر می‌شود؟</summary><p>جزئیات خدمات و امکان رزرو آنلاین پس از بازبینی دوباره فعال خواهد شد.</p></details></section></main><?php get_footer(); ?>

@@ -1,0 +1,1 @@
+<?php get_header(); ?><main id="main" class="empty-page"><?php if(have_posts()):while(have_posts()):the_post(); ?><h1><?php the_title(); ?></h1><?php the_content();endwhile;else: ?><h1>این صفحه پیدا نشد.</h1><a class="btn" href="<?php echo esc_url(home_url('/')); ?>">بازگشت به خانه</a><?php endif; ?></main><?php get_footer(); ?>

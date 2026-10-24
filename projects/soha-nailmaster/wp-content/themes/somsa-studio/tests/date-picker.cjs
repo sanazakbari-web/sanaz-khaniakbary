@@ -1,0 +1,13 @@
+const assert = require('node:assert/strict');
+const dates = require('../assets/date-picker.js');
+const days = dates.options('2026-10-13', '2026-11-12');
+assert.equal(days.length, 31);
+assert.equal(new Set(days.map(day => day.value)).size, 31);
+assert.equal(days[0].value, '2026-10-13');
+assert.equal(days.at(-1).value, '2026-11-12');
+assert.match(days[0].label, /۲۱ مهر ۱۴۰۵/);
+assert.match(dates.format('2026-10-23'), /۱ آبان ۱۴۰۵/);
+assert.match(dates.format('2026-03-21'), /۱ فروردین ۱۴۰۵/);
+assert.equal(dates.options('2026-10-13', '2026-10-13').length, 1);
+assert.equal(dates.options('2026-11-12', '2026-10-13').length, 0);
+console.log('PASS Persian dates, month/year boundaries and 31-day booking range');
